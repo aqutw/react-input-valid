@@ -1,6 +1,6 @@
 {
   "name": "react-input-valid",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Smarter INPUT with validations. ONLY depends on ReactJS. Make life simple.",
   "main": "dist/react-input-valid.js",
   "scripts": {
