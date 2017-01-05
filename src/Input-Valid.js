@@ -1,17 +1,9 @@
 import React, { PropTypes, Component } from 'react';
 
-import TextField from 'material-ui/TextField/index';
-//http://stackoverflow.com/questions/36953711/ START
-import baseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
-import getMuiTheme from 'material-ui/styles/getMuiTheme';
-
 import InValidErrMsg from './In-Valid-Err-Msg';
 import {ValidWrap, InputValidPropTypes, InputValidDefaultProps} from './Base';
 
 export default class InputValid extends Component {
-  getChildContext() {
-    return { muiTheme: getMuiTheme(baseTheme) };
-  }
   constructor(props) {
     super(props);
     const {defaultValue} = this.props;
@@ -48,10 +40,10 @@ export default class InputValid extends Component {
     const value = defaultValue;
 
     return (<ValidWrap>
-      <TextField 
+      <input
         type={inputType}
-        defaultValue={value} 
-        hintText={hint} 
+        defaultValue={value}
+        placeholder={hint}
         onChange={evt=>{
           const VALUE = evt.target.value;
           const bool = this.getIsValid(VALUE);

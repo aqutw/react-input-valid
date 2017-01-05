@@ -39,7 +39,9 @@ const HideShow = (AnyComponent) => {
 const STYLE_FOR_INVALID_ERR_MSG = {
   position: 'absolute',
   left: 0,
-  top: '38px',
+  zIndex:9,
+  opacity: .85,
+  top: '24px',
   //3.2
   marginTop: '2px',
   padding: '.3em .6em',
