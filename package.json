@@ -4,7 +4,7 @@
   "description": "Smarter INPUT with validations. ONLY depends on ReactJS. Make life simple.",
   "main": "dist/react-input-valid.js",
   "scripts": {
-    "dev": "webpack-dev-server --inline --hot --content-base=demo",
+    "dev": "webpack-dev-server --inline --hot --content-base=demo --port=8088",
     "build": "NODE_ENV=production babel-node ./scripts/build",
     "build.demo": "WEBPACK=demo webpack",
     "test": "nyc ava -v",
